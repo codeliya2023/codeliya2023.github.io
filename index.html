@@ -5,57 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material 3 Landing Page</title>
-    <link rel="stylesheet" href="https://unpkg.com/@material/mwc-top-app-bar-fixed/mwc-top-app-bar-fixed.css">
-    <link rel="stylesheet" href="https://unpkg.com/@material/mwc-jumbotron/mwc-jumbotron.css">
-    <link rel="stylesheet" href="https://unpkg.com/@material/mwc-button/mwc-button.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/top-app-bar@3.0.0-beta.4/dist/mdc.top-app-bar.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@material/card@3.0.0-beta.4/dist/mdc.card.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
     <style>
         body {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
         }
 
-        .jumbotron {
-            height: 400px;
-            background-color: #f5f5f5;
+        .top-app-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .card-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            margin-bottom: 50px;
+            height: 80vh;
+            padding: 20px;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
+        .card {
+            max-width: 400px;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
             padding: 20px;
             text-align: center;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <mwc-top-app-bar-fixed>
-            <mwc-icon-button icon="menu"></mwc-icon-button>
-            <div slot="title">Material 3 Landing Page</div>
-        </mwc-top-app-bar-fixed>
+    <header class="mdc-top-app-bar top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <span class="mdc-top-app-bar__title">Material 3 Landing Page</span>
+            </section>
+        </div>
     </header>
 
-    <div class="jumbotron">
-        <mwc-jumbotron>
-            <h1>Welcome to Material 3</h1>
-            <p>A simple landing page using Material 3 CSS</p>
-            <mwc-button raised label="Get Started"></mwc-button>
-        </mwc-jumbotron>
+    <div class="card-container">
+        <div class="mdc-card card">
+            <div class="mdc-card__primary-action">
+                <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url('https://via.placeholder.com/400x225');"></div>
+                <div class="mdc-card__media-content">
+                    <h2 class="mdc-typography--headline6">Card Title</h2>
+                    <p class="mdc-typography--body2">This is a simple card with some text content.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Material 3 Landing Page</p>
     </footer>
+
+    <script src="https://unpkg.com/@material/top-app-bar@3.0.0-beta.4/dist/mdc.top-app-bar.min.js"></script>
+    <script src="https://unpkg.com/@material/card@3.0.0-beta.4/dist/mdc.card.min.js"></script>
 </body>
 
 </html>
