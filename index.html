@@ -1,98 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#ffffff">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS loaders and Spinners</title>
-
-    <!-- Search Engine -->
-    <meta name="title" content="CSS loaders and spinner">
-    <meta name="description" content="CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.">
-    <meta name="keywords" content="css, loader, spinners , loading , waiting, css loading, cssloaders, css loaders, css3 loaders,  css spinners,  css3spinners, ,  css3 spinners, ,  cssspinners,  HTML, CSS3">
-    <meta name="author" content="Vineeth TR">
-
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="CSS loaders and spinner">
-    <meta itemprop="description" content="CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.">
-    <meta name="image" content="https://cssloaders.github.io/images/Loader-screen.png">
-    
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="CSS loaders and spinners">
-    <meta name="og:description" content="CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.">
-    <meta name="og:image" content="https://cssloaders.github.io/images/Loader-screen.png">
-    <meta name="og:url" content="https://cssloaders.github.io/">
-    <meta name="og:site_name" content="CSS loaders and spinners">
-    <meta name="fb:admins" content="https://www.facebook.com/vinithtrv">
-    <meta name="og:type" content="website">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="CSS loaders and spinners">
-    <meta name="twitter:description" content="CSS Loader is a collection of different types of loaders, spinners and their source code. There are no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too.">
-    <meta property="twitter:url" content="https://cssloaders.github.io/">
-    <meta name="twitter:creator" content="@vineethtrv">
-    <meta name="twitter:image:src" content="https://cssloaders.github.io/images/Loader-screen.png">
-
-    <link rel="stylesheet" href="css/styles.css">
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4F1SESL3HZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-4F1SESL3HZ');
-    </script>
-</head>
-<body>
-    <header>
-        <span class="brand">L &nbsp; aders</span>
-
-        <nav>
-            <a class="nav-btn codepen" target="_blank" href="https://codepen.io/vineethtrv/pen/NWxZqMM"></a>
-            <a class="nav-btn git" target="_blank" href="https://github.com/vineethtrv/css-loader"></a>
-        </nav>
-    </header>
-    <footer>
-        <a href="https://vineethtrv.github.io/" target="_blank" >
-            <span>👨&zwj;💻</span>
-            Vineeth TR
-        </a>
-    </footer>
-
-
-    <div class="overlay">
-        <div class="popup">
-            <button class="btn-close">&times;</button>
-            <div class="showcase"></div>
-            <div class="code-content">
-                <div class="code-area">
-                    <div class="code-header">
-                        HTML
-                        <button class="copy" data-id="markup">Copy</button>
-                    </div>
-                    <code id="markup"></code>
-                </div>
-                <div class="code-area">
-                    <div class="code-header">
-                        CSS
-                        <button class="copy" data-id="css">Copy</button>
-                    </div>
-                    <code id='css'></code>
-                </div>
-            </div>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+    </a>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-
-    <script  type="module" src="./js/app.js"></script>
-</body>
+  </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
